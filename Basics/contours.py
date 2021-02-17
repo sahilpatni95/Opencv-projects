@@ -2,10 +2,10 @@ import cv2 as cv
 import numpy as np
 
 #git_url = 'https://raw.githubusercontent.com/sahilpatni95/Opencv-projects/main/Data/Photos/cats.jpg'
-local_url = 'C:/Users/sahil/PycharmProjects/Opencv-projects/Data/Photos/cat.jpg'
 
 
-img = cv.imread(local_url)
+
+img = cv.imread(git_url)
 cv.imshow('Cats', img)
 
 blank = np.zeros(img.shape, dtype = 'uint8')
