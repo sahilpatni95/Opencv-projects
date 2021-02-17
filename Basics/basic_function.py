@@ -1,9 +1,8 @@
 import cv2 as cv
 
-#git_url = 'https://raw.githubusercontent.com/sahilpatni95/Opencv-projects/main/Data/Photos/park.jpg'
-local_url = 'C:/Users/sahil/PycharmProjects/Opencv-projects/Data/Photos/park.jpg'
+git_url = 'https://raw.githubusercontent.com/sahilpatni95/Opencv-projects/main/Data/Photos/park.jpg'
 
-img = cv.imread(local_url)
+img = cv.imread(git_url)
 #img = cv.imread(git_url)
 cv.imshow('Park', img)
 
