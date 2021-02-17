@@ -2,8 +2,7 @@ import cv2 as cv
 import matplotlib.pyplot as plt
 import numpy as np
 
-#url = 'https://raw.githubusercontent.com/sahilpatni95/Opencv-projects/main/Data/Photos/cat 2.jpg'
-url = 'C:/Users/sahil/PycharmProjects/Opencv-projects/Data/Photos/cat.jpg'
+url = 'https://raw.githubusercontent.com/sahilpatni95/Opencv-projects/main/Data/Photos/cat 2.jpg'
 
 img = cv.imread(url)
 cv.imshow('Cats', img)
