@@ -65,7 +65,7 @@ if biggest.size != 0:
     imgSolvedDigits = imgBlank.copy()
     boxes = splitBoxes(imgWarpColored)
     print(len(boxes))
-    # cv2.imshow("Sample",boxes[65])
+    #cv2.imshow("Sample", boxes[65])
     numbers = getPredection(boxes, model)
     print(numbers)
     imgDetectedDigits = displayNumbers(imgDetectedDigits,
@@ -104,6 +104,7 @@ if biggest.size != 0:
     imgInvWarpColored = cv2.warpPerspective(imgSolvedDigits,
                                             matrix,
                                             (widthImg, heightImg))
+
     inv_perspective = cv2.addWeighted(imgInvWarpColored,
                                       1,
                                       img,
@@ -111,6 +112,7 @@ if biggest.size != 0:
                                       1)
     imgDetectedDigits = drawGrid(imgDetectedDigits)
     imgSolvedDigits = drawGrid(imgSolvedDigits)
+    #print(imgSolvedDigits)
 
     imageArray = ([img, imgThreshold, imgContours, imgBigContour],
                   [imgDetectedDigits, imgSolvedDigits, imgInvWarpColored, inv_perspective])

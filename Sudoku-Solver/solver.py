@@ -4,7 +4,7 @@ def solve(bo):
         return True
     else:
         row, col = find
-    for i in range(1,10):
+    for i in range(1, 10):
         if valid(bo, i, (row, col)):
             bo[row][col] = i
             if solve(bo):
@@ -46,5 +46,5 @@ def find_empty(bo):
     for i in range(len(bo)):
         for j in range(len(bo[0])):
             if bo[i][j] == 0:
-                return (i, j)  # row, col
+                return (i, j)#row, col
     return None
